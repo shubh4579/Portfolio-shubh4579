@@ -408,11 +408,75 @@ section .title::after {
 .skills-content .right .Ckk::before {
     width: 85%;
 }
+/* projects section styling */
+
+.projects {
+    background-color: #f1f1f1;
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects .title::after {
+    content: "my projects";
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Added to make them display vertically */
+    flex-direction: column; /* Added to make them display vertically */
+}
+
+.project-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.project-card a {
+    align-self: flex-start; /* Align the link to the left */
+    margin-top: auto; /* Push the link to the bottom */
+    display: inline-block;
+    background: #00b1cc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00b1cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #fff;
+    background: #00a6bb;
+}
+
 
 
 /* contact section styling */
+.contact {
+    color: #fff;
+    background: #111; /* Black background */
+}
+
+.contact .title::before {
+    background: #fff;
+}
 
 .contact .title::after {
+    background: #111;
     content: "get in touch";
 }
 
@@ -424,10 +488,13 @@ section .title::after {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #fff; /* White text color */
 }
+
 
 .contact .contact-content .left p {
     text-align: justify;
+    color: #fff; /* White text color */
 }
 
 .contact .contact-content .left .icons {
@@ -439,6 +506,7 @@ section .title::after {
     height: 65px;
     align-items: center;
 }
+
 
 .contact .contact-content .row .info {
     margin-left: 30px;
@@ -454,7 +522,7 @@ section .title::after {
 }
 
 .contact .contact-content .info .sub-title {
-    color: #333;
+    color: #fff;
 }
 
 .contact .right form .fields {
@@ -481,7 +549,7 @@ section .title::after {
 .contact .right form .textarea textarea {
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid #fff;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -673,4 +741,13 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+}
+#msg {
+    color: #00b1cc; 
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    opacity: 0; 
 }
