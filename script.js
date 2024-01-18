@@ -71,7 +71,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyzHQui4pRXsHQcjMLLwv
                 setTimeout(function(){
                     msg.innerHTML = ""
                     msg.style.opacity = 0;
-                },3000)
+                },4000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
